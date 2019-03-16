@@ -100,7 +100,7 @@
         },
         mounted() {
             axios
-                .get(`http://www.omdbapi.com/?i=${this.id}&apikey=ec3515c8&page=1&type=movie&Content-Type=application/json`)
+                .get(`https://www.omdbapi.com/?i=${this.id}&apikey=ec3515c8&page=1&type=movie&Content-Type=application/json`)
                 .then(response => {
                     this.singleMovie = response.data
                     this.ratings = this.singleMovie.Ratings

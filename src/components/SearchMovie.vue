@@ -68,7 +68,7 @@ export default {
       this.$router.push('/movie/' + id)
     },
     fetchResult (value) {
-      const url = 'http://www.omdbapi.com/?apikey=b76b385c&Content-Type=application/json' + '&s=' + value
+      const url = 'https://www.omdbapi.com/?apikey=b76b385c&Content-Type=application/json' + '&s=' + value
       axios
         .get(url)
         .then(response => {
