@@ -56,7 +56,7 @@
         },
         mounted() {
             axios
-                .get('http://www.omdbapi.com/?s=indiana&apikey=ec3515c8&page=1&type=movie&Content-Type=application/json')
+                .get('http://www.omdbapi.com/?s=black+panther&apikey=ec3515c8&page=1&type=movie&Content-Type=application/json')
                 .then(response => {
                     this.wholeResponse = response.data.Search
                     this.loading = false
